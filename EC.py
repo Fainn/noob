@@ -10,7 +10,7 @@ bot = commands.Bot(
 
 session = ClientSession(loop = bot.loop)
 
-token = "MjY0NjM0MDI3MjgwMDM5OTM4.DKpe7g.IL9yBHjhvK7HGGoKUM_TdBZbLXY"
+tokens = os.environ.get("TOKEN")
 
 
 @bot.command()
@@ -39,5 +39,5 @@ async def editemoji(ctx, emoji_name):
     await bot.say("Emoji {} edited!".format(edited_emoji))
 
 safe_token = "{}".format(tokens)    
-client.run('MjY0NjM0MDI3MjgwMDM5OTM4.DKpe7g.IL9yBHjhvK7HGGoKUM_TdBZbLXY', bot = False, reconnect = False)
+client.run('safe_token', bot = False, reconnect = False)
 
