@@ -39,5 +39,5 @@ async def editemoji(ctx, emoji_name):
     await bot.say("Emoji {} edited!".format(edited_emoji))
 
 safe_token = "{}".format(tokens)    
-client.run('safe_token', bot = False, reconnect = False)
+bot.run(safe_token)
 
