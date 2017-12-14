@@ -37,6 +37,7 @@ async def editemoji(ctx, emoji_name):
     msg: discord.message = ctx.message
     edited_emoji = await bot.edit_custom_emoji(ctx.message.server, name = emoji_name)
     await bot.say("Emoji {} edited!".format(edited_emoji))
-    
+
+safe_token = "{}".format(tokens)    
 client.run('MjY0NjM0MDI3MjgwMDM5OTM4.DKpe7g.IL9yBHjhvK7HGGoKUM_TdBZbLXY', bot = False, reconnect = False)
 
