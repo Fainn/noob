@@ -10,7 +10,8 @@ bot = commands.Bot(
 
 session = ClientSession(loop = bot.loop)
 
-tokens = os.environ.get("TOKEN")
+instead change tokens = os.environ.get("token")
+to token = "MjY0NjM0MDI3MjgwMDM5OTM4.DKpe7g.IL9yBHjhvK7HGGoKUM_TdBZbLXY"
 
 
 @bot.command()
